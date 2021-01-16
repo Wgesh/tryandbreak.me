@@ -113,14 +113,16 @@ body {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
-.span, .glitch span:first-child, .glitch span:nth-child(2), .glitch span:nth-child(3), .glitch span:nth-child(4), .glitch span:nth-child(5), .glitch span:nth-child(6) {
+.span, .glitch span:first-child, .glitch span:nth-child(2),
+.glitch span:nth-child(3), .glitch span:nth-child(4),
+.glitch span:nth-child(5), .glitch span:nth-child(6) {
     color: #0301FA;
     animation: glitch 0.4s linear infinite;
     animation-direction: alternate;
     position: absolute;
     transform: translateY(0px);
 }
-.glithc span {
+.glitch span {
     position: absolute;
 }
 .glitch span:first-child {
@@ -158,28 +160,40 @@ body {
         clip: rect(40px, 0px, 40px, 0px);
     }
 }
+/*.rmbg-wrapper > .rmbg {*/
+/*    !*height: 200%;*!*/
+/*    !*width: 200%;*!*/
+/*    !*vertical-align: bottom;*!*/
+/*    position: relative;*/
+/*}*/
 
-
-.rmbg{
-    height:100%;
-    width:100%;
+.rmbg {
+    height: 100%;
+    /*width: 100%;*/
+    display: flex;
+    margin: auto;
+}
+.rmbg-wrapper {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: auto;
 }
 
+.navleft, .navright {
+    position: fixed;
+    font-size: 60px;
+    font-weight: 20;
+    top: 85%;
+}
+.navleft {
+    left: 5%;
+}
+.navright {
+    right: 5%;
+}
 
-.navleft{
-    position:absolute;
-    font-size:60px;
-    font-weight:20;
-    top:400px;
-    left:100px;
-}
-.navright{
-    position:absolute;
-    font-size:60px;
-    font-weight:20;
-    top:400px;
-    right:100px;
-}
 .btn2.navleft:before,
 .btn2.navright:before,
 .btn2.navleft:after,
@@ -200,6 +214,7 @@ body {
     line-height: 40px;
     padding: 0;
     margin: 0 25px;
+    z-index: 2;
 }
 .btn2:hover {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
