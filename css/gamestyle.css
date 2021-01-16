@@ -11,6 +11,8 @@ html {
     margin: 0;
 }
 body {
+    padding:0;
+    margin: 0;
     overflow: hidden;
     background: #000;
 }
@@ -140,18 +142,77 @@ body {
 }
 
 
+.rmbg{
+    height:100%;
+    width:100%;
+}
 
 
+.navleft{
+    position:absolute;
+    font-size:60px;
+    font-weight:20;
+    top:400px;
+    left:100px;
+}
+.navright{
+    position:absolute;
+    font-size:60px;
+    font-weight:20;
+    top:400px;
+    right:100px;
+}
 
-
+.btn2 {
+    text-decoration: none;
+    color: #fff;
+    /*padding: 8px 16px;*/
+    /*margin: 0 10px;*/
+    /*border: 1px solid #fff;*/
+    letter-spacing: 1px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0 25px;
+}
+.btn2:hover {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    border-width: 1px 0px 1px 0px;
+    color:white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+.btn2:before,
+.btn2:after {
+    width: 15px;
+    border: 1px solid #fff;
+    content: "";
+    height: 40px;
+    top: -1px;
+}
+.btn2:before {
+    left: -16px;
+    border-right: none;
+}
+.btn2:after {
+    right: -16px;
+    border-left: none;
+}
+.btn2:hover,
+.btn2:hover:before,
+.btn2:hover:after {
+    transition: all .1s;
+    background: rgba(255,255,255,0.2);
+    border-color: #ffffff;
+    <<<<<<< HEAD
+}
 
 /*CTR Screen*/
 @import "compass/css3";
 body {
     background: #111;
     color: white;
-    padding-top: 20px;
-    padding-left: 20px;
 }
 #switch {
     display: none;
@@ -261,10 +322,9 @@ body {
 }
 
 .container {
-    height:100%;
-    padding:10px;
+    padding:0;
+    margin: 0;
     background: #121010;
-    margin-top: 10px;
     position: relative;
     overflow: hidden;
 }
