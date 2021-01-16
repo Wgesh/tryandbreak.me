@@ -26,5 +26,56 @@ p{
     background-color: #343a40;
     letter-spacing: .1em;
     text-shadow: -2px -2px 2px #111, 3px 3px 2px #363636;
+}
 
+/*btn */
+.btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding: 0;
+    margin: 0 25px;
+    Text-decoration: none;
+}
+.btn2:hover {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+.btn2:before,
+.btn2:after {
+    width: 15px;
+    border: 1px solid #fff;
+    position: absolute;
+    content: "";
+    height: 40px;
+    top: -1px;
+}
+.btn2:before {
+    left: -16px;
+    border-right: none;
+}
+.btn2:after {
+    right: -16px;
+    border-left: none;
+}
+.btn2:hover,
+.btn2:hover:before,
+.btn2:hover:after {
+    transition: all .1s;
+    background: rgba(255,255,255,0.2);
+    border-color: #ffffff;
+}
+.btn2:hover {
+    border: 1px solid #ffffff;
+    border-width: 1px 0 1px 0;
+    color:white;
+    text-decoration: none;
+    text-decoration-color: white;
 }
