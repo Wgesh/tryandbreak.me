@@ -20,7 +20,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: 0px;
+    margin-left: 0;
     transform: translateX(-50%) translateY(-50%);
 }
 .glitch {
@@ -40,7 +40,7 @@ body {
     text-align: center;
     position: relative;
     color: #EEEEEE;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: -2px;
     animation: show 0.2s infinite;
@@ -178,7 +178,7 @@ body {
 }
 .btn2:hover {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 0 1px 0;
     color:white;
     text-decoration: none;
     text-decoration-color: white;
@@ -205,11 +205,10 @@ body {
     transition: all .1s;
     background: rgba(255,255,255,0.2);
     border-color: #ffffff;
-    <<<<<<< HEAD
 }
 
 /*CTR Screen*/
-@import "compass/css3";
+/*@import "compass/css3";*/
 body {
     background: #111;
     color: white;
@@ -222,9 +221,7 @@ body {
     cursor: pointer;
     background: #fff;
     color: #111;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     margin-top: 10px;
     box-shadow: 0 2px #666;
