@@ -33,9 +33,9 @@ p{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    padding: 8px 16px;
-    margin: 0 10px;
-    border: 1px solid #fff;
+    /*padding: 8px 16px;*/
+    /*margin: 0 10px;*/
+    /*border: 1px solid #fff;*/
     letter-spacing: 1px;
     border: none;
     height: 40px;
@@ -43,10 +43,13 @@ p{
     position: relative;
     padding: 0;
     margin: 0 25px;
-    Text-decoration: none;
 }
 .btn2:hover {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    border-width: 1px 0px 1px 0px;
+    color:white;
+    text-decoration: none;
+    text-decoration-color: white;
 }
 .btn2:before,
 .btn2:after {
@@ -71,11 +74,16 @@ p{
     transition: all .1s;
     background: rgba(255,255,255,0.2);
     border-color: #ffffff;
+<<<<<<< HEAD
 }
 .btn2:hover {
     border: 1px solid #ffffff;
     border-width: 1px 0 1px 0;
-    color:white;
+    color: #ec8686;
     text-decoration: none;
     text-decoration-color: white;
 }
+/**/
+=======
+}
+>>>>>>> main
