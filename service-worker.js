@@ -4,23 +4,23 @@ const cacheName = 'Offline Cache';
 const cacheAssets = [
     'index.html',
 
-    'css/main.css',
+    '/css/main.css',
 
-    'local/instantpage-5.1.0.js',
-    'local/jquery.min.js',
+    '/local/instantpage-5.1.0.js',
+    '/local/jquery.min.js',
 
-    'js/main.js',
-    'js/lock.js',
+    '/js/main.js',
+    '/js/lock.js',
 
-    'images/rm1-1.jpg',
-    'images/rm1-2.jpg',
-    'images/rm1-3.jpg',
-    'images/rm2-1.jpg',
-    'images/rm2-2.jpg',
-    'images/rm2-3.jpg',
-    'images/rm3-1.jpg',
-    'images/rm3-2.jpg',
-    'images/rm3-3.jpg'
+    '/images/rm1-1.jpg',
+    '/images/rm1-2.jpg',
+    '/images/rm1-3.jpg',
+    '/images/rm2-1.jpg',
+    '/images/rm2-2.jpg',
+    '/images/rm2-3.jpg',
+    '/images/rm3-1.jpg',
+    '/images/rm3-2.jpg',
+    '/images/rm3-3.jpg'
 
 ]
 
@@ -33,7 +33,7 @@ self.addEventListener('install', (e) => {
             .open(cacheName)
             .then(cache => {
                 // cache the files
-                console.log('Service Worker: Files Cached')
+                console.log('Service Worker: Files Cached');
                 cache.addAll(cacheAssets).catch(r => { console.log('error')});
             })
             .then(() => self.skipWaiting())
