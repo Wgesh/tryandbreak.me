@@ -16,6 +16,12 @@ body {
     background: white;
     text-align: center;
 }
+
+/* smooth scroll to anchors */
+html {
+    scroll-behavior: smooth;
+}
+
 /*home style*/
 p{
     font-size:19px;
@@ -28,7 +34,7 @@ p{
     text-shadow: -2px -2px 2px #111, 3px 3px 2px #363636;
 }
 
-/*btn */
+/* btn */
 .btn2 {
     display: inline-block;
     text-decoration: none;
@@ -46,7 +52,7 @@ p{
 }
 .btn2:hover {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 0 1px 0;
     color:white;
     text-decoration: none;
     text-decoration-color: white;
@@ -74,5 +80,4 @@ p{
     transition: all .1s;
     background: rgba(255,255,255,0.2);
     border-color: #ffffff;
-<<<<<<< HEAD
 }
