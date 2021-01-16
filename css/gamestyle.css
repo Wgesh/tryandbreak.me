@@ -162,6 +162,13 @@ body {
     top:400px;
     right:100px;
 }
+.btn2.navleft:before,
+.btn2.navright:before,
+.btn2.navleft:after,
+.btn2.navright:after {
+    border: none;
+}
+
 
 .btn2 {
     text-decoration: none;
