@@ -15,6 +15,7 @@ const cacheAssets = [
     './js/main.js',
     './js/lock.js',
 
+    'gpfp.jpg',
     './images/rm1-1.jpg',
     './images/rm1-2.jpg',
     './images/rm1-3.jpg',
@@ -24,6 +25,8 @@ const cacheAssets = [
     './images/rm3-1.jpg',
     './images/rm3-2.jpg',
     './images/rm3-3.jpg',
+    'rpfp.png',
+    'wpfp.jpg',
 
     './sounds/bombsound.mp3',
     './sounds/The Bombardier\'s Song Bing Crosby.mp3',
