@@ -1,12 +1,15 @@
 // cache variables
 const cacheName = 'Offline Cache';
 
-var fs = require('fs');
-var files = fs.readdirSync('./images/');
-console.log(files);
-
 const cacheAssets = [
-    './images/*'
+    'index.html',
+
+    'local/instantpage-5.1.0.js',
+    'local/jquery.min.js',
+
+    'js/main.js',
+    'js/lock.js',
+
 ]
 
 // call install event
@@ -32,18 +35,6 @@ self.addEventListener('activate', (e) => {
 // call fetch event
 self.addEventListener('fetch', e => {
     e.respondWith(
-        fetch(e.request)
-            .then(res => {
-                // make copy of response
-                const resClone = res.clone();
-                caches
-                    .open(cacheName)
-                    .then(cache => {
-                        // add response to cache
-                        cache.put(e.request, resClone).catch(r => { console.log('error')});
-                        // cache.addAll(cacheAssets);
-                    })
-                return res;
-            }).catch(err => caches.match(e.request).then(res => res))
+        fetch(e.request).catch(() => caches.match(e.request))
     );
 });
