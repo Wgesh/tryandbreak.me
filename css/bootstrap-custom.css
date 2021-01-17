@@ -29,9 +29,16 @@ a {
 #fullscreen-arrow {
     position: absolute;
     filter: invert();
-    bottom: 2.5%;
+    bottom: 2.6%;
     left: 50%;
     transform: translateX(-50%);
+    animation: arrowhover 2s infinite;
+}
+
+@keyframes arrowhover {
+    0% {bottom: 2.6%;}
+    50% {bottom: 2.3%;}
+    100% {buttom: 2.5%;}
 }
 
 .anchor {
