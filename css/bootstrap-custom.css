@@ -5,13 +5,17 @@
 
 .container.learn-more-content {
     max-width: 1500px;
-    padding: 80px 15px;
+    padding: 60px 15px;
 }
 .container.full-page {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#team {
+    padding-top: 140px;
 }
 
 .masthead{
@@ -28,4 +32,15 @@ a {
     bottom: 2.5%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.anchor {
+    color: #212529;
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+.anchor:hover {
+    color: #212529;
+    text-decoration: none;
 }
