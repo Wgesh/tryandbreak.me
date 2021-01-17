@@ -21,7 +21,7 @@ function setupTypewriter(t) {
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 60,
+        typeSpeed = 1,
     tempTypeSpeed = 0;
 
     var type = function() {
