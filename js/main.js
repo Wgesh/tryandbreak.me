@@ -21,15 +21,13 @@ function setupTypewriter(t) {
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 100,
+        typeSpeed = 190,
     tempTypeSpeed = 0;
 
     var type = function() {
-
         if (writingTag === true) {
             tag += HTML[cursorPosition];
         }
-
         if (HTML[cursorPosition] === "<") {
             tempTypeSpeed = 0;
             if (tagOpen) {
@@ -64,12 +62,10 @@ function setupTypewriter(t) {
                 tag = newSpan.firstChild;
             }
         }
-
         cursorPosition += 1;
         if (cursorPosition < HTML.length - 1) {
             setTimeout(type, tempTypeSpeed);
         }
-
     };
 
     return {
