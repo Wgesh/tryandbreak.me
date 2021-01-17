@@ -33,6 +33,10 @@ const cacheAssets = [
     './images/rm2/rm2-2.jpg',
     './images/rm2/rm2-3.jpg',
 
+    'images/rm3/rm3-1.jpg',
+    'images/rm3/rm3-2.jpg',
+    'images/rm3/rm3-3.jpg',
+
     './images/arrow-down.svg',
     './images/cloud-off.svg',
     './images/eye-off.svg',
