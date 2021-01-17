@@ -179,6 +179,7 @@ body {
     width: 100%;
     position: fixed;
     margin: auto;
+    top: 0;
 }
 
 .navleft, .navright {
@@ -487,3 +488,49 @@ body {
     animation-fill-mode: forwards;
 }
 
+/* text CSS */
+
+/*.var-highlight {*/
+/*    color: #c0ad60;*/
+/*}*/
+
+/*.string-highlight {*/
+/*    color: rgba(253, 149, 90, 0.8);*/
+/*}*/
+
+.text {
+    display: inline-block;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    z-index: 3;
+}
+
+#typewriter {
+    font-size: 1em;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    z-index: 3;
+}
+#typewriter:after {
+    content: "|";
+    -webkit-animation: blink 500ms linear infinite alternate;
+          animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
