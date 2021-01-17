@@ -202,7 +202,7 @@ body {
     opacity: 10%;
 }
 
-.navleft, .navright {
+.navleft, .navright , .navcenter {
     position: fixed;
     font-size: 60px;
     font-weight: 20;
@@ -213,6 +213,10 @@ body {
 }
 .navright {
     right: 5%;
+}
+.navcenter {
+    left: 50%;
+    top: 90%;
 }
 
 .btn2.navleft:before,
