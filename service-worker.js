@@ -12,9 +12,13 @@ const cacheAssets = [
     './rm2/rm2-1.html',
     './rm2/rm2-2.html',
     './rm2/rm2-3.html',
-    'rm3/rm3-1.html',
-    'rm3/rm3-2.html',
-    'rm3/rm3-3.html',
+    './rm3/rm3-1.html',
+    './rm3/rm3-2.html',
+    './rm3/rm3-3.html',
+
+    './css/bootstrap-custom.css',
+    './css/gamestyle.css',
+    './css/main.css',
 
     './images/pfp/gpfp.jpg',
     './images/pfp/rpfp.jpg',
@@ -25,9 +29,9 @@ const cacheAssets = [
     './images/rm1/rm1-2.jpg',
     './images/rm1/rm1-3.jpg',
 
-    'images/rm2/rm2-1.jpg',
-    'images/rm2/rm2-2.jpg',
-    'images/rm2/rm2-3.jpg',
+    './images/rm2/rm2-1.jpg',
+    './images/rm2/rm2-2.jpg',
+    './images/rm2/rm2-3.jpg',
 
     './images/arrow-down.svg',
     './images/cloud-off.svg',
