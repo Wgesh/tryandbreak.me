@@ -21,3 +21,11 @@
 a {
     -webkit-user-drag: none;
 }
+
+#fullscreen-arrow {
+    position: absolute;
+    filter: invert();
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
