@@ -20,6 +20,9 @@ img {
     padding-top:200px;
     font-size: 10vh;
 }
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -41,6 +44,10 @@ body {
     margin-left: 0;
     transform: translateX(-50%) translateY(-50%);
 }
+
+
+
+
 .glitch {
     text-align: center;
     position: relative;
@@ -168,18 +175,31 @@ body {
 /*}*/
 
 .rmbg {
-    height: 100%;
+    display: block;
+    height: auto;
+    width: 95%;
+    margin:auto;
     /*width: 100%;*/
-    display: flex;
-    margin: auto;
+    /*display: flex;*/
+    /*margin: auto;*/
 }
 .rmbg-wrapper {
-    overflow: auto;
+    overflow: hidden;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: relative;
     margin: auto;
     top: 0;
+}
+
+.selection{
+    height:0px;
+    width:0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #000;
+    opacity: 10%;
 }
 
 .navleft, .navright {
