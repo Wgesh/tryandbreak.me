@@ -45,6 +45,7 @@ const cacheAssets = [
 
     './js/lock.js',
     './js/main.js',
+    'service-worker',
 
     './local/bootstrap.bundle.min.js',
     './local/bootstrap.min.css',
